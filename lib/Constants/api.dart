@@ -1,1 +1,1 @@
-const String api = 'http://10.10.2.2:8000';
+const String api = 'http://localhost:8000';

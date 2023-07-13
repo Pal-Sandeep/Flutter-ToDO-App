@@ -11,6 +11,39 @@ class ToDoContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        width: double.infinity,
+        height: 160,
+        decoration: const BoxDecoration(
+          color: Colors.pink,
+          borderRadius: BorderRadius.all(Radius.circular(4))
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title, style: const TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+            ),
+            ),
+            SizedBox(height: 6,),
+            Text(
+              description,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+              ),
+            )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

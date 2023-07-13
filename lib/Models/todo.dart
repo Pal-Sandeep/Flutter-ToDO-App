@@ -1,4 +1,4 @@
-class ToDo{
+class ToDo {
   int id;
   String title;
   String description;
@@ -11,5 +11,4 @@ class ToDo{
     required this.is_done,
     required this.date,
   });
-
 }
