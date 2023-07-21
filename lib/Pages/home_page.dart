@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
   void fetchData() async {
     try {
       http.Response response =
-          await http.get(Uri.parse('http://192.168.43.128:8000'));
+          await http.get(Uri.parse(api));
       // http.Response response = await http.get(Uri.parse('http://localhost:8000'));
       // http.Response response = await http.get(Uri.parse('http://localhost:8000'));
       //http.Response response = await http.get(Uri.parse('http://localhost:8000'));
